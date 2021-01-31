@@ -21,6 +21,7 @@ body {
     height: 100%;
     background: $color2;
     position: relative;
+    scroll-behavior: smooth;
     font-family: 'Red Hat Display', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -280,12 +281,12 @@ ol {
     border-radius: 30px;
     a {
         font-size: 14px;
-        color: #131313;
+        color: $textcolor;
     }
 }
 .main-menu {
     float: right;
-    margin-right: 170px;
+    // margin-right: 170px;
     ul {
         list-style: none;
         li {
@@ -710,7 +711,7 @@ ol {
     padding: 4rem 0;
 
     .media-wrapper {
-        width: 9rem;
+        width: 9.5rem;
         height: auto;
     }
 }
@@ -1241,12 +1242,6 @@ ol {
     .page-info-section .pi-content h2 {
         font-size: 50px;
     }
-    .frame {
-        display: none;
-        &_left {
-            display: none;
-        }
-    }
 }
 
 /* Tablet :768px. */
@@ -1475,9 +1470,6 @@ ol {
     &_left {
         left: -10%;
     }
-    // @include media-breakpoint-down(md) {
-    //     display: none;
-    // }
 }
 
 .heading {
@@ -1501,19 +1493,6 @@ ol {
             margin-top: 2.875rem;
             left: 0;
         }
-
-        // &.intro {
-        //     @include media-breakpoint-down(sm) {
-        //         text-align: center;
-        //         margin-bottom: 1.5rem;
-        //     }
-        //     &::after {
-        //         margin-top: 3.5rem;
-        //         @include media-breakpoint-down(sm) {
-        //             display: none;
-        //         }
-        //     }
-        // }
     }
 }
 
@@ -1534,4 +1513,37 @@ ol {
 
 .text-highlight {
     color: $color1;
+}
+
+//responsive
+@media (max-width: 992px) {
+    .frame {
+        display: none;
+    }
+    .frame_left {
+        display: none;
+    }
+
+    .about-section {
+        .media-wrapper {
+            width: 100%;
+            height: 80%;
+        }
+    }
+    .features-section {
+        .media-wrapper {
+            width: 100%;
+        }
+    }
+}
+
+.main-menu {
+    .nav {
+        &-item {
+            .active {
+                background-color: unset;
+                color: $color1;
+            }
+        }
+    }
 }

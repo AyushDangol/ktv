@@ -24,55 +24,47 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
-        <!-- Page Preloder
+    <body data-spy="scroll" data-target="#navbar-example2" data-offset="1">
+        <!-- Page Preloder -->
         <div id="preloder">
             <div class="loader"></div>
-        </div> -->
+        </div>
 
         <!-- Header section -->
         <header class="header-section fixed-top">
-            <div class="container">
+            <div class="container d-flex justify-content-between align-items-center">
                 <!-- logo -->
                 <a class="site-logo" href="index.html">
                     <img src="img/logo.svg" alt="" />
                 </a>
-                <div class="user-panel"><a href="#">Download</a></div>
                 <!-- responsive -->
                 <div class="nav-switch">
                     <i class="fa fa-bars"></i>
                 </div>
-                <!-- site menu -->
-                <!-- <nav id="navbar-example" class="main-menu">
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#category">Categories</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </nav> -->
-                <nav id="navbar-example2" class="navbar main-menu">
-                    <ul class="nav nav-pills">
+                <nav id="navbar-example2" class="navbar order-2 main-menu">
+                    <ul class="nav justify-content-center nav-pills">
                         <li class="nav-item">
-                            <a href="#hero">Home</a>
+                            <a href="#hero" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#category">Categories</a>
+                            <a href="#category" class="nav-link">Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#features">Features</a>
+                            <a href="#features" class="nav-link">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about">About</a>
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#app" class="nav-link">Download</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <!-- Header section end -->
-        <!-- Hero section -->
-        <!-- Hero section end -->
-        <main data-spy="scroll" data-target="#navbar-example" data-offset="0">
+
+        <main>
+            <!-- Slider section -->
             <section id="hero" class="hero-section">
                 <div class="hero-slider owl-carousel">
                     <div class="hs-item set-bg" data-setbg="img/slider-1.png">
@@ -83,7 +75,6 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br />
                                     lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br />Suspendisse cursus faucibus finibus.
                                 </p>
-                                <a href="#" class="site-btn">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -95,12 +86,12 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br />
                                     lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br />Suspendisse cursus faucibus finibus.
                                 </p>
-                                <a href="#" class="site-btn">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <!-- Categories section -->
             <section id="category" class="feature-section spad">
                 <div class="container">
@@ -175,13 +166,13 @@
             <section id="about" class="about-section spad">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-6 offset-lg-1">
+                        <div class="col-md-6 offset-lg-1 order-2 order-md-1">
                             <div class="media-wrapper">
                                 <div class="frame frame_left"></div>
                                 <img src="./img/about.png" alt="" />
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-6">
+                        <div class="col-lg-5 col-md-6 order-1 order-md-2">
                             <h1 class="heading-01 heading-underline">About</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
@@ -233,28 +224,26 @@
             <!-- App section -->
             <section id="app" class="app-section spad secondary_bg">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 d-flex align-items-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
                             <div class="app--text">
                                 <h4 class="heading-01 heading-underline">Download Our App</h4>
                                 <p class="mt-2 mb-4">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias impedit mollitia repellendus ipsa perferendis corporis est, dignissimos illo
                                     fuga quod atque.
                                 </p>
-                                <div class="media-wrapper">
-                                    <a href="#"><img src="./img/googleplay.png" /></a>
+                                <div class="media-wrapper mb-4 mb-md-0">
+                                    <a href="#"><img src="./img/googleplay.svg" /></a>
                                 </div>
-                                <!-- <a href="#"><img src="./img/appstore.png" /></a> -->
                             </div>
                         </div>
-                        <div class="col-lg-6 offset-lg-1">
+                        <div class="col-lg-6 col-md-6 offset-lg-1">
                             <div class="app--image">
                                 <img src="./img/playstore.png" class="app--img" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <img src="./img/img13.png" class="lg--img2" /> -->
             </section>
 
             <!-- Review section -->
@@ -262,44 +251,64 @@
                 <div class="container">
                     <h1 class="heading-01">Recent Reviews</h1>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="review-card">
-                                <p class="mb-4">Once you’ve opened up a book, you’ve opened up your mind. Lorem Ipsum is simply dummy text of the printing and typesettin.</p>
-                                <div class="media-wrapper mb-2">
-                                    <img src="./img/people/img1.jpg" alt="" />
+                        <div class="col-lg-3 col-md-6 mb-3 mb-md-0">
+                            <div class="review-card d-flex flex-column justify-content-between h-100">
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eveniet. Cum eaque dolorum ipsum deleniti autem unde quos commodi expedita
+                                    excepturi, illo est recusandae magni aspernatur nobis nesciunt rerum iusto.
+                                </p>
+                                <div>
+                                    <div class="media-wrapper mb-2">
+                                        <img src="./img/people/img1.jpg" alt="" />
+                                    </div>
+                                    <h5 class="my-1">Alexis Fless</h5>
+                                    <p class="subtitle mb-0">Graphic Designer</p>
                                 </div>
-                                <h5 class="my-1">Alexis Fless</h5>
-                                <p class="subtitle mb-0">Graphic Designer</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3 mb-md-0">
+                            <div class="review-card d-flex flex-column justify-content-between h-100">
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolorum, esse ratione aspernatur architecto ipsam modi doloribus eius quasi
+                                    placeat sunt atque eveniet perspiciatis consequatur incidunt omnis, unde quas ut.
+                                </p>
+                                <div>
+                                    <div class="media-wrapper mb-2">
+                                        <img src="./img/people/img2.jpg" alt="" />
+                                    </div>
+                                    <h5 class="my-1">Alexis Fless</h5>
+                                    <p class="subtitle mb-0">Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3 mb-md-0">
+                            <div class="review-card d-flex flex-column justify-content-between h-100">
+                                <p class="mb-4">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fuga blanditiis eligendi alias, libero eum. Accusantium est libero magni
+                                    odit nemo? Soluta amet esse quasi eaque, mollitia veniam id ad.
+                                </p>
+                                <div>
+                                    <div class="media-wrapper mb-2">
+                                        <img src="./img/people/img3.jpg" alt="" />
+                                    </div>
+                                    <h5 class="my-1">Alexis Fless</h5>
+                                    <p class="subtitle mb-0">Graphic Designer</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="review-card">
-                                <p class="mb-4">Once you’ve opened up a book, you’ve opened up your mind. Lorem Ipsum is simply dummy text of the printing and typesettin.</p>
-                                <div class="media-wrapper mb-2">
-                                    <img src="./img/people/img2.jpg" alt="" />
+                            <div class="review-card d-flex flex-column justify-content-between h-100">
+                                <p class="mb-4">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fuga blanditiis eligendi alias, libero eum. Accusantium est libero magni
+                                    odit nemo? Soluta amet esse quasi eaque, mollitia veniam id ad.
+                                </p>
+                                <div>
+                                    <div class="media-wrapper mb-2">
+                                        <img src="./img/people/img4.jpg" alt="" />
+                                    </div>
+                                    <h5 class="my-1">Alexis Fless</h5>
+                                    <p class="subtitle mb-0">Graphic Designer</p>
                                 </div>
-                                <h5 class="my-1">Alexis Fless</h5>
-                                <p class="subtitle mb-0">Graphic Designer</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="review-card">
-                                <p class="mb-4">Once you’ve opened up a book, you’ve opened up your mind. Lorem Ipsum is simply dummy text of the printing and typesettin.</p>
-                                <div class="media-wrapper mb-2">
-                                    <img src="./img/people/img3.jpg" alt="" />
-                                </div>
-                                <h5 class="my-1">Alexis Fless</h5>
-                                <p class="subtitle mb-0">Graphic Designer</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="review-card">
-                                <p class="mb-4">Once you’ve opened up a book, you’ve opened up your mind. Lorem Ipsum is simply dummy text of the printing and typesettin.</p>
-                                <div class="media-wrapper mb-2">
-                                    <img src="./img/people/img4.jpg" alt="" />
-                                </div>
-                                <h5 class="my-1">Alexis Fless</h5>
-                                <p class="subtitle mb-0">Graphic Designer</p>
                             </div>
                         </div>
                     </div>
@@ -310,20 +319,14 @@
         <!-- Footer section -->
         <footer class="footer-section spad">
             <div class="container">
-                <ul class="footer-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="review.html">Categories</a></li>
-                    <li><a href="categories.html">Features</a></li>
-                    <li><a href="community.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Download</a></li>
-                </ul>
-                <p class="copyright">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    All rights reserved | <span class="text-highlight">KTV Live Sports App</span>
-                </p>
+                <div class="row justify-content-center">
+                    <p class="copyright">
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        All rights reserved | <span class="text-highlight">KTV Live Sports App</span>
+                    </p>
+                </div>
             </div>
         </footer>
         <!-- Footer section end -->

@@ -14,6 +14,7 @@ body {
   height: 100%;
   background: #0a0a0a;
   position: relative;
+  scroll-behavior: smooth;
   font-family: 'Red Hat Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -278,12 +279,11 @@ ol {
 
 .user-panel a {
   font-size: 14px;
-  color: #131313;
+  color: #f1f1f1;
 }
 
 .main-menu {
   float: right;
-  margin-right: 170px;
 }
 
 .main-menu ul {
@@ -685,7 +685,7 @@ ol {
 }
 
 .app-section .media-wrapper {
-  width: 9rem;
+  width: 9.5rem;
   height: auto;
 }
 
@@ -1256,12 +1256,6 @@ ol {
   .page-info-section .pi-content h2 {
     font-size: 50px;
   }
-  .frame {
-    display: none;
-  }
-  .frame_left {
-    display: none;
-  }
 }
 
 /* Tablet :768px. */
@@ -1533,6 +1527,27 @@ ol {
 }
 
 .text-highlight {
+  color: #ff8a00;
+}
+
+@media (max-width: 992px) {
+  .frame {
+    display: none;
+  }
+  .frame_left {
+    display: none;
+  }
+  .about-section .media-wrapper {
+    width: 100%;
+    height: 80%;
+  }
+  .features-section .media-wrapper {
+    width: 100%;
+  }
+}
+
+.main-menu .nav-item .active {
+  background-color: unset;
   color: #ff8a00;
 }
 /*# sourceMappingURL=style.css.map */
