@@ -11,11 +11,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap");
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   background: #0a0a0a;
   position: relative;
   scroll-behavior: smooth;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
@@ -56,7 +56,7 @@ h6 {
 }
 
 p {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-size: 14px;
   color: #f1f1f1;
   line-height: 2;
@@ -105,7 +105,7 @@ ol {
 }
 
 .spad {
-  margin-top: 6.25rem;
+  margin-top: 4.5rem;
 }
 
 .text-white h1,
@@ -479,7 +479,7 @@ ol {
 
 .feature-item:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   left: 0;
@@ -575,6 +575,32 @@ ol {
 .features-section .media-wrapper {
   width: 429px;
   height: 512px;
+}
+
+.features-section .feature-list {
+  padding: 1.25rem;
+  background: #1a1a1a;
+}
+
+.features-section .feature-list .icon {
+  width: 3rem;
+  height: 3rem;
+  background: #ff8a00;
+  border-radius: 50%;
+}
+
+.features-section .feature-list .icon img {
+  width: 2rem;
+}
+
+.features-section .feature-list h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff8a00;
+}
+
+.features-section .feature-list p {
+  font-size: 0.875rem;
 }
 
 /*----------------------
@@ -1051,8 +1077,8 @@ ol {
   padding-top: 30px;
 }
 
-.comment-form input[type='text'],
-.comment-form input[type='email'],
+.comment-form input[type="text"],
+.comment-form input[type="email"],
 .comment-form textarea {
   width: 100%;
   height: 41px;
@@ -1499,7 +1525,7 @@ ol {
 }
 
 .heading-underline::after {
-  content: '';
+  content: "";
   margin-bottom: 3.5rem;
   width: 4rem;
   height: 0.25rem;
